@@ -1,0 +1,32 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --config webpack.dev.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "source-map-loader": "0.2.2",
+    "ts-loader": "2.3.7",
+    "typescript": "2.5.3",
+    "webpack": "3.6.0",
+    "webpack-dev-server": "2.9.1"
+  },
+  "dependencies": {
+    "@types/react": "15.6.0",
+    "@types/react-dom": "15.5.0",
+    "@types/react-redux": "5.0.6",
+    "@types/react-router": "3.0.5",
+    "@types/react-router-redux": "4.0.48",
+    "react": "15.5.4",
+    "react-dom": "15.5.4",
+    "react-redux": "5.0.5",
+    "redux": "3.7.2",
+    "react-router": "3.0.5",
+    "react-router-redux": "4.0.8"
+  }
+}
