@@ -1,5 +1,6 @@
 import * as React from 'react';
-
+const style = require('./hello.css');
+const imgX = require('../img/x.png');
 export interface Props {
   name: string;
   enthusiasmLevel?: number;
@@ -19,14 +20,15 @@ export default class Hello extends React.Component<Props, {}> {
     }
 
     return (
-      <div className="hello">
-        <div className="greeting">
+      <div className={style.hello}>
+        <div className={style.greeting}>
           Hello {name + getExclamationMarks(enthusiasmLevel)}
         </div>
         <div>
           <button onClick={onDecrement}>-</button>
           <button onClick={onIncrement}>+</button>
         </div>
+        <img src={imgX} alt="imgX" />
       </div>
     );
   }
